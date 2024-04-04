@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- BELOW LINE IS THE CSS FILE FOR ADDING BOOTSRAP -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel = "stylesheet" href = "style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        #front{
+            width:40%;
+            border: 1px solid transparent;
+        }
+        #accio{
+            width:20%;
+      
+        }
+        #butt{
+            border: 1px solid grey;
+        }
+        #second{
+            width:40%;
+            margin-left: 10%;
+            font-style: italic;
+        }
+        #head{
+            color: blue;
+        }
+        #para{
+            font-weight: 100;
+            font-size: 20px;
+        }
+        #salary{
+            width:100%;
+            height:50px;
+            border: 1px solid transparent;
+            box-shadow: 0px 0px 5px;
+        }
+        .p{
+           font-size: 15px; 
+        }
+        #box{
+            width:30%;
+            height:400px;
+            border: 1px solid grey;
+            box-shadow: 0px 0px 10px;
+           
+        }
+        .free{
+    
+            font-size: 30px;
+            font-style: italic;
+            font-weight: 600;
+           
+        
+        }
+        #mar1{
+            margin-left: 20%;
+        }
+        #mar2{
+            margin-left: 25%;
+        }
+        #mar3{
+            margin-left: 25%;
+        }
+        .icon{
+    width: 90%;
+    margin-inline: 20px;
+    margin-top: 20px;
+    height: 50px;
+    background-color:blue;
+    border-radius:5px;
+    display: flex;
+    font-size: 25px;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    font-style: italic;
+}
+    
+    </style>
+</head>
+<body>
+
+<!-- FIRST PART -->
+
+<nav class="d-flex justify-content-around align-items-center border-bottom">
+    <div class="d-flex align-items-center justify-content-around " id="accio" >
+    <img  src="https://course.acciojob.com/acciojob_logo.svg" alt="acciojob">
+    <h3>Acciojob</h3>
+    <img width="50px" height="50px"  src="data:image/jpeg;base64,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">
+    </div>
+    <div class="d-flex justify-content-around  "id="front">
+        <p>Courses</p>
+        <p>Acciojob Reviews</p>
+        <p>Scholorship Test</p>
+        <p>More</p>
+    </div>
+
+    <button id="butt" class="btn fs-5">Login</button>
+
+</nav>
+
+<section class="d-flex justify-content-around mt-5">
+    <div class="mt-5" id="second">
+        <h1>Launch your career with our<h1>
+            <div class="d-flex">
+            <p id="head" class="me-2">Full Stack Developer</p>
+            <p>Courses</p>
+            </div>
+            <p id="para">Curriculum designed and taught by algoirthm and leading tech companies</p>
+            <div class="d-flex justify-content-around" id="salary">
+                <p class="p">41 lakhs highest salary</p>
+                <p class="p"> 300+ partners</p>
+                <p class="p">100% job guarantee</p>
+                <p class="p">8.3 lpa</p>
+            </div>
+    </div>
+    <div id="box">
+        <p id="mar1" class=" free">Start Attending Live </p>
+         <p id="mar2" class="  free">   Classes for free</p>
+        <p id="mar3" >Live lectures and assignmensts <p>
+            <div class="ms-3 mb-3" id="search">
+                <i class="fa fa-search" aria-hidden="true"></i>
+               <input type="text" placeholder="samvrant">
+           </div>
+           <div class="ms-3"  id="search1">
+            <i class="fa fa-search" aria-hidden="true"></i>
+           <input type="number" placeholder="phone number">
+       </div>
+
+       <div class="icon">Apply Now For Free</div>
+    </div>
+</section>
+
+    <!-- BELOW LINES ARE JAVASCRIPT FILE FOR ADDIG BOOTSTRAP  -->
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>
